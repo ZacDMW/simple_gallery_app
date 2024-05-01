@@ -1,0 +1,1 @@
+I'm just trying to create a simple photo gallery app that would display my fiance's artwork. I think she'd love it. I received no errors on the code end, but my emulator keeps on crashing. I have shrink the image sizes, so the largest is around 200kb.
