@@ -1,9 +1,13 @@
 package com.example.photogalleryapp
 
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -18,7 +22,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.photogalleryapp.R
 
-@Composable
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            PhotoGalleryApp()
+        }
+    }
+}@Composable
+
 fun PhotoGalleryApp() {
     var currentImageIndex by remember { mutableIntStateOf(0) }
     val images = listOf(
@@ -39,12 +51,16 @@ fun PhotoGalleryApp() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Text(
+            text = stringResource(id = getImageContentDescriptionResId(currentImageIndex)),
+            modifier = Modifier.padding(8.dp)
+        )
         Image(
             painter = painterResource(id = images[currentImageIndex]),
             contentDescription = stringResource(id = getImageContentDescriptionResId(currentImageIndex)),
             modifier = Modifier
-                .size(200.dp)
-                .scale(0.2f)
+                .size(400.dp)
+                .scale(0.8f)
         )
 
         Row(
