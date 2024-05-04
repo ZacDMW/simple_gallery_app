@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PhotoGalleryApp</string>
+
+    <string name="title">Mia\'s Artwork Samples</string>
+    <string name="artwork_1_label">Palia Fan Art</string>
+    <string name="artwork_2_label">She-Hulk</string>
+    <string name="artwork_3_label">Sweet Death</string>
+    <string name="artwork_4_label">Final Space Fan Art</string>
+    <string name="artwork_5_label">Loki Artwork</string>
+    <string name="artwork_6_label">Angel from Lilo and Stitch</string>
+    <string name="artwork_7_label">Final Space Fan Art</string>
+    <string name="artwork_8_label">Spawn Fan Art</string>
+    <string name="artwork_9_label">Palia Fan Art</string>
+    <string name="artwork_10_label">Devil Girl Original Artwork</string>
+
+    <string name="artwork_1_content_description">Artwork of a character from Palia</string>
+    <string name="artwork_2_content_description">Buff She-Hulk</string>
+    <string name="artwork_3_content_description">Original Art Work by Mia</string>
+    <string name="artwork_4_content_description">Final Space Fan Art</string>
+    <string name="artwork_5_content_description">Loki Fan Art</string>
+    <string name="artwork_6_content_description">Angel from Lilo &amp; Stitch Fan Art</string>
+    <string name="artwork_7_content_description">Final Space Fan Art</string>
+    <string name="artwork_8_content_description">Spawn fan art by Mia</string>
+    <string name="artwork_9_content_description">Palia Fan Art</string>
+    <string name="artwork_10_content_description">Devil Girl Original Artwork</string>
+
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+</resources>
